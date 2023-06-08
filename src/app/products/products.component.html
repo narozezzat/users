@@ -1,0 +1,11 @@
+<div *ngIf="userAge > 18">
+  <ul>
+    <li *ngFor="let item of products; let i = index">
+      {{ i + 1 }} - {{ item }}
+    </li>
+  </ul>
+</div>
+
+<p [ngClass]="{'text-success' : isAdmin , 'bg-success' : ''}">Admin user</p>
+
+<p [ngStyle]="{'background-color' : isAdmin ? 'green' : 'red' , 'color' : ''}">Admin user</p>
